@@ -48,7 +48,7 @@ To learn more about each section, take a look in the makefile comments.
 ## How to Use
 1. Start by moving the makefile inside your project's root directory.
 
-2. If your project is not organized in directories ( all the files are on the same directory ), you will need to first "organize" your project. **Else,** if your files are already organized in the supported format ( src, include, obj, bin, lib ) you can skip this step.
+2. If your project is already organized in the supported directory structure ( src, include, obj, bin, lib ) you can skip this step. **Else,** if your project is not organized in directories ( all the files are on the same directory ), you will need to first "organize" your project:
 ```
 make org
 ```
