@@ -2,10 +2,10 @@
 A  makefile that aims to simplify development for small to medium scale C/C++ programs and University assignments.
 
 ## Contents
-- [Features](##features)
-- [Description](##description)
-- [Future Updates](##future-updates)
-- [How to Use](##how-to-use)
+- [Features](#features)
+- [Description](#description)
+- [Future Updates](#future-updates)
+- [How to Use](#how-to-use)
 
 ## Features 
 - Automatic file detection ( source, header and lib )
