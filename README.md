@@ -5,6 +5,7 @@ A  makefile that aims to simplify development for small to medium scale C/C++ pr
 - [Features](#features)
 - [Description](#description)
 - [Future Updates](#future-updates)
+-  [How to Setup](#how-to-setup)
 - [How to Use](#how-to-use)
 
 ## Features 
@@ -27,7 +28,7 @@ This is a personal project and it might not fit everyone's needs, so feel free t
 ## Future Updates
 Although makefiles are not the optimal way of unit testing your code, i would like to include a simple way to run unit tests on my libraries and structs with minimal effort. 
 
-## How to Use
+## How to Setup
 The makefile is "broken" into 5 sections for better organisation. The **only** Sections that you may need to edit are the "Makefile Arguments" and the "Run and Test" Sections.
 
 **Makefile Arguments:** Here you can edit all the project parameters to fit your needs. You can set:
@@ -37,6 +38,32 @@ The makefile is "broken" into 5 sections for better organisation. The **only** S
 -  Any **libraries** that need to be included by the linker ( LINKFLAGS )
 - **The final executable's name** ( OUT )
 
-**Run and Test:** This section contains the running and debugging rules - the "one line commands". Here you can add your own rules to expand this makefile.
+Before you start using your makefile, you should first make sure that you have selected the correct options for your needs (compiler, file types, ... )
+
+**Run and Test:** This section contains the running and debugging rules - the "one line commands". Here you can add your own rules to expand this makefile, but you can probably make do with the existing ones.
+So you probably won't need to make any changes on this section in the beginning.
 
 To learn more about each section, take a look in the makefile comments.
+
+## How to Use
+1. Start by moving the makefile inside your project's root directory.
+
+2. If your project is not organized in directories ( all the files are on the same directory ), you will need to first "organize" your project. **Else,** if your files are already organized in the supported format ( src, include, obj, bin, lib ) you can skip this step.
+```
+make org
+```
+This command creates the needed directories and moves all the files on their corresponding directories
+
+3. Don't forget to make sure that the arguments in the "Makefile Arguments'' section of the makefile, like the selected compiler, are the correct ones for your project.
+
+4. You are ready!
+
+Now you can compile and run your project just by using the command:
+```
+make run
+```
+Also you can compile and run using Valgrind with
+```
+make vg
+```
+To see all the available "one line commands", check the "Run and Test" section of the makefile and its comments.
