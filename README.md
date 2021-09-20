@@ -5,7 +5,7 @@ A  makefile that aims to simplify development for small to medium scale C/C++ pr
 - [Features](#features)
 - [Description](#description)
 - [Future Updates](#future-updates)
--  [How to Setup](#how-to-setup)
+- [Setup Options](#setup-options)
 - [How to Use](#how-to-use)
 
 ## Features 
@@ -28,7 +28,7 @@ This is a personal project and it might not fit everyone's needs, so feel free t
 ## Future Updates
 Although makefiles are not the optimal way of unit testing your code, i would like to include a simple way to run unit tests on my libraries and structs with minimal effort. 
 
-## How to Setup
+## Setup Options
 The makefile is "broken" into 5 sections for better organisation. The **only** Sections that you may need to edit are the "Makefile Arguments" and the "Run and Test" Sections.
 
 **Makefile Arguments:** Here you can edit all the project parameters to fit your needs. You can set:
