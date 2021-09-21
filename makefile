@@ -7,7 +7,7 @@
 #____________________________________________________________________________________
 
 # The names of the directories used
-SRC=SRC           # Source files directory ( .c/ .cpp ) 
+SRC=src           # Source files directory ( .c/ .cpp ) 
 INCLUDE=include   # Header files directory ( .h / .hpp ) 
 OBJ=obj           # Object files directory (.o) They get auto-placed there 
 BIN=bin           # Binary files directory ( executables ) 
