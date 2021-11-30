@@ -1,7 +1,7 @@
 # One makefile to rule them all
 A  makefile that aims to simplify development for small to medium scale C/C++ programs and University assignments.
 
-## Warning! There is a serious Bug on this version
+## Warning! There is a serious Bug on this version - Directory Name Variables appear empty
 I don't suggest using it on this state (Unless you know how to fix it yourself)
 I will try to fix it when I have time.
 
